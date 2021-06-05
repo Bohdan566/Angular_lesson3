@@ -1,0 +1,9 @@
+<div [class.target]="user.status" *ngFor="let user of users" >
+  <app-user [user]="user"></app-user>
+</div>
+
+<router-outlet></router-outlet>
+
+<!--[hidden]="user.status"-->
+<!--*ngIf="user.status"-->
+
